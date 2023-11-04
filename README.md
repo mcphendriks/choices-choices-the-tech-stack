@@ -2,7 +2,7 @@
 Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. 
 De instructie vind je in: [docs/INSTRUCTIONS.md](https://github.com/fdnd-task/choices-choices-the-tech-stack/blob/main/docs/INSTRUCTIONS.md)
 
-# Titel
+# Remix App
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## Inhoudsopgave
@@ -15,18 +15,28 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](https://github.com/fdnd-task/ch
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+In Sprint 14: Lose Your Head ben ik samen met een team begonnen aan het ontwerpen en maken van een opdracht voor een opdrachtgever met een framework en headless CMS. Daarbij stond het framework (Sveltekit) en het headless CMS (HyGraph) vast. In deze sprint experimenteer ik met het Framework react en tools; ik ontwerpt en bouwt precies dezelfde website met een andere tech-stack. (Remix & Contentfull)
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+- De app is gebouwd met Remix.
+- De HTML-structuur is eenvoudig en gebruiksvriendelijk.
+- Het CSS is responsief Grid-layout in het Dashboard ziet er goed uit op verschillende apparaten.
+- Het Javascript wordt gebruikt om de data uit het API te laden.
 
 ## Installatie
+1. Installeer de laatste versie Node.js.
+2. Clone deze repository:
+3. Install Remix:
+```
+npx create-remix@latest
+````
+4. Start de app:
+```
+npm run dev
+```
 
-## Gebruik
+De app wordt nu gestart op localhost:3000: http://localhost:3000.
 
-## Bronnen
 
 ## Licentie
 
