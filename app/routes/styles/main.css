@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --darkBlue: #143653;
+    --lightBlue: #5CC8DE;
+    --whiteColor: #ffffff;
+    --lightGray: #f7f7f7;
+    --accentGray: rgb(228, 228, 228);
+    --worldmapGray: #dbdbdb;
+    --worldmapBorder: #8c8c8c;
+    --worldmapbuttons: rgb(235, 235, 235);
+    --textColor: #143653;
+    --boxShadow: rgba(128, 128, 128, 0.132);
+    --color: rgb(212, 212, 212);
+    --textSize: 1.2rem;
+    --iconSize: 2rem;
+}
+
+    h1 {
+        line-height: 1.2;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: var(--darkBlue);
+        font-size: 2rem;
+    }
+
+    h2 {
+		line-height: 1.2;
+		font-weight: 500;
+		color: var(--darkBlue);
+		margin-bottom: 1rem;
+	}
+
+	h3 {
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+    section {
+    display: grid; 
+    gap: 1em 1em;  
+    padding: 1em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .2fr 2.5fr 8fr 6fr 8fr 8fr 5fr 8fr;
+    grid-template-areas: 
+  "one one"
+  "two three"
+  "four four"
+  "five five"
+  "six six"
+  "seven seven"
+  "eight eight" 
+  "nine nine";      
+          }
+
+    article {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+		
+    header {
+        grid-area: one;
+    }
+
+    article:nth-of-type(1){
+        grid-area: two; 
+    }
+
+    article:nth-of-type(2){
+        grid-area: three;
+    }
+
+    article:nth-of-type(3){
+        grid-area: four;
+    }
+
+    article:nth-of-type(4){
+        grid-area: five;
+    }
+
+    article:nth-of-type(5){
+        grid-area: six;
+    }
+
+    article:nth-of-type(6){
+        grid-area: seven;
+    }
+
+    article:nth-of-type(7){
+        grid-area: eight;
+    }
+
+    article:nth-of-type(8){  
+        grid-area: nine;
+    }
+
+    /* tablets */
+    @media (min-width: 48em)  {
+
+    }
+
+    /* desktop */
+    @media (min-width: 64em) {
+        section {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 0.2fr 1fr 2fr 0.5fr 1fr; 
+        grid-template-areas: 
+          "one one one one one one"
+          "two three four four four four"
+          "five five four four four four"
+          "six seven eight eight nine nine"
+          "six seven eight eight nine nine";
+          height: 100vh;
+        }
+    }
+
+
+    
+
+
+
+
+	/* line */
+	.line {
+		height: 2px;
+		width: 18%;
+		background-color: var(--lightBlue);
+	}
+
+	.more-link {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		gap: 2rem;
+		color: var(--textColor);
+		font-size: 1.5rem;
+		text-transform: capitalize;
+	}
+
+	.more-link:hover {
+		color: var(--lightBlue);
+	}
+
+	.more-icon {
+		font-size: 1.8rem;
+		color: var(--lightBlue);
+	}
+
+	.table-more {
+		border-collapse: collapse;
+	}
+
+	.more-row {
+		border-bottom: 0.5px solid var(--accentGray);
+		height: 4rem;
+	}
+
+	.arrow {
+		text-align: right;
+	}
+
+	/* Scroll to top */
+	.scroll-top {
+		position: absolute;
+		bottom: 1%;
+		right: 2%;
+		width: 3rem;
+		height: 3rem;
+		padding: 0.5rem;
+		background-color: var(--lightBlue);
+		color: var(--whiteColor);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+
+  
